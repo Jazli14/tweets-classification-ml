@@ -17,7 +17,7 @@ def classify(file: str):
 
     soccer = ["2022 FIFA World Cup", "FIFA Men\'s World Cup", "Premier League", "Champions League",
               "Euros", "Ligue 1", "La Liga", "Copa América"]
-    basketball = ["NCAA Men\'s Basketball", "Basketball Game", "NCAA"]
+    basketball = ["NCAA Men\'s Basketball", "Basketball Game", "NCAA", "NBA"]
     football = ["Super Bowl", "NFL", "The Super Bowl"]
     hockey = ["Stanley Cup", "NHL", "The Stanley Cup"]
     baseball = ["MLB", "World Series", "World Baseball Classic", "Premier12 World Championship"]
