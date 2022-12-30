@@ -57,7 +57,9 @@ The intent of this project is to scrape sports tweets using Twitter's API. Using
     In order to analyze these tweets and break them down for the computer to understand we needed to use Natural Langauge Processing or NLP for short.
     We decided to do this using scikit-learn although we realized that TensorFlow, or even PyTorch might be better for this process.
 
-    We decided to use the method TF-IDF for the model to use via the Tfidf Vectorizer given by the scikit's feature extraction library. TF-IDF stands for term frequency-inverse document frequency which will find a word's importance to the output then return a weighting factor for each word that appears in its dictionary.
+    We decided to use the method TF-IDF for the model to use via the Tfidf Vectorizer given by the scikit's feature extraction library. TF-IDF will find a word's importance to the output then return a weighting factor for each word that appears in its dictionary.
+    The "TF" stands for "term frequency" which refers to the frequency of a term in the document. "IDF" refers to the "inverse document frequency" which looks at the logarithmic inverse proportion of documents where the term occurs across the whole corpus. The TFIDF score multiplies both the TF and IDF scores, to get a final weighted value.
+    
     It was given the argument (1, 2) for the ngram\_range parameter to allow for the use of n-grams, specifically, unigrams and bigrams when it creates the vector holding the sequences of words.
 
     Then a variable called X\_fit was created which held the fitted and transformed values from the TfidfVectorizer.
@@ -94,7 +96,7 @@ The intent of this project is to scrape sports tweets using Twitter's API. Using
 
     To conclude the project, it was an overall success as an accuracy of 83\% is decently accurate for the project.
 
-    Some improvements we could have used was to scrape more tweets in order to create a greater data set for the model to be trained on. Another improvement we could've performed would be to use TensorFlow or PyTorch where the former especially specializes in Neural Networks where this could be used to perform Natural Language Processing better. This could greatly increase the accuracy of the model.
+    Some improvements we could have used was to scrape more tweets in order to create a greater data set for the model to be trained on. Another improvement we could've performed would be to use TensorFlow or PyTorch where the former especially specializes in Neural Networks where this could be used to perform Natural Language Processing better. This could greatly increase the accuracy of the model. A different technique other than TF-IDF could have been used like the bag of words or word2vec technique.
 
     Future projects we could perform would be to create a model that can formulate a tweet that corresponded to each of those sports maybe via TensorFlow. We could also try to classify tweets of other sports as well. 
 
