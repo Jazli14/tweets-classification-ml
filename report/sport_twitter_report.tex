@@ -81,7 +81,11 @@ The intent of this project is to scrape sports tweets using Twitter's API. Using
 
     Here is an example of a graph that shows these scores that were assessed for the n\_estimator hyperparameter. The solid blue line at the bottom shows the actual mean score and the outer purple bubble surrounding the line represents the standard deviation that is plus minus from the calculated mean. The solid orange line represents the score of the model on the training data. 
 
-    \includegraphics[scale=.70]{n_estimators.png}
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[scale=.80]{n_estimators.png}    \caption{Validation Curve of n\_estimators}
+    \label{f:n_estimators}
+\end{figure}
 
     We then created a new RandomForestClassifier object by passing in the hyperparameters that performed the best in the validation\_curve tests where it was finally used to train itself on the data
 
@@ -91,12 +95,16 @@ The intent of this project is to scrape sports tweets using Twitter's API. Using
 \section{Results}
     To assess the results we used the classification\_report function that compared the predicted sport (output) result of the tweet was to the actual real sport of the tweet.
 
-    A rough average of 83\% was achieved after several tests of the model. 
+    A rough average of 89\% accuracy was achieved after several tests of the model. 
     
-
+\begin{figure}[ht!]
+    \centering
     \includegraphics[scale=1]{classification_report.png}
+    \caption{Classification Report}
+    \label{f:classification_report}
+\end{figure}
 
-    To conclude the project, it was an overall success as an accuracy of 83\% is decently accurate for the project.
+    To conclude the project, it was an overall success as the overall accuracy resulted of 89\%  is decently accurate for the project. Where the macro average was an 87\% which refers to the literal mean of the scores. And the weighted average was 88\% will take into account the size of each sample size when taking the mean. So overall the model performed well at predicting the tweets of the testing set.
 
     Some improvements we could have used was to scrape more tweets in order to create a greater data set for the model to be trained on. Another improvement we could've performed would be to use TensorFlow or PyTorch where the former especially specializes in Neural Networks where this could be used to perform Natural Language Processing better. This could greatly increase the accuracy of the model. A different technique other than TF-IDF could have been used like the bag of words or word2vec technique.
 
