@@ -52,7 +52,7 @@ The intent of this project is to scrape sports tweets using Twitter's API. Using
     \item 4: Corresponds to Soccer
     \end{itemize}
 
-    This label was then assigned to the y/output variable to be observed. 
+    This label was then assigned to the y/output variable to be observed which was labeled as the "Sport\_Cat" feature.
 
     In order to analyze these tweets and break them down for the computer to understand we needed to use Natural Langauge Processing or NLP for short.
     We decided to do this using scikit-learn although we realized that TensorFlow, or even PyTorch might be better for this process.
@@ -73,11 +73,13 @@ The intent of this project is to scrape sports tweets using Twitter's API. Using
 
     A function was created to find the highest performing classifier and usually the best performing was the \textbf{Random Forest} model. 
 
+    This model works by growing multiple separate decision trees and then passing the testing data through each tree. It then aggregates the results from each of the trees as it pools all of the trees together to generate an accurate result. Whichever result had the most or majority points would be decided as the final result from the model.
+
     Afterwards, we decided to fine tune the hyperparameters by using the validation\_curve function to find the best arguments for n\_estimators, max\_depth, max\_samples\_split and finally min\_samples\_leaf to find the best performing values to increase the accuracy of the model.
 
-    \indent For each hyperparameter, we used the validation\_curve function on each and calculated their mean which also used the training set.
+    For each hyperparameter, we used the validation\_curve function on each and calculated their mean which also used the training set.
 
-    Here is an example of a graph that shows these scores that were assessed for the n\_estimator hyperparameter. The solid blue line at the bottom shows the actual mean score and the outer purple bubble surrounding the line represents the standard deviation that is plus minus from the calculated mean. 
+    Here is an example of a graph that shows these scores that were assessed for the n\_estimator hyperparameter. The solid blue line at the bottom shows the actual mean score and the outer purple bubble surrounding the line represents the standard deviation that is plus minus from the calculated mean. The solid orange line represents the score of the model on the training data. 
 
     \includegraphics[scale=.70]{n_estimators.png}
 
