@@ -4,4 +4,4 @@
 
 ## Cleaning the Data
 
-## Model Training
+## Training the Model
