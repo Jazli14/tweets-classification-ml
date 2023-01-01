@@ -1,7 +1,7 @@
 # Scraping and Classifying Sports Tweets
 
-## Scraping Tweets
+## Tweet Scraping
 
-## Cleaning the Data
+## Data Cleaning
 
-## Training the Model
+## Model Training
