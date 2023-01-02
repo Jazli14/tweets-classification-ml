@@ -28,3 +28,4 @@ Using this classifier, it was trained on the 80% training set and tested with th
 
 ### Results
 The results were an achievement of an overall accuracy of 89%, a macro average of 87% and a weighted average of 88%.
+![image](/resources/results_report.png)
